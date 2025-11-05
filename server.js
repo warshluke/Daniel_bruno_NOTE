@@ -20,6 +20,20 @@ app.get('/usuarios',(req,res) => {
 ]);
 });
 
+//rota 4
+app.get('/produtos',(req,res) => {
+    res.json([
+    {id: 1, nome: 'Maçã', preco: '20'},
+    {id: 2, nome: 'Banana', preco: '15'},
+    {id: 3, nome: 'Pera', preco: '15'},
+    {id: 4, nome: 'Laranja', preco: '16'},
+
+]);
+});
+
+//rota 5
+
+
 //inicia o servidor
 app.listen(3000, () => {
     console.log('Servidor rodado em http://localhost:3000')
